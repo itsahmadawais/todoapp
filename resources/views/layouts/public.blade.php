@@ -17,6 +17,13 @@
     @include('components.public.navbar')
     @yield('content')
     @include('components.public.footer')
+    <div id="preloader">
+      <div id="status">
+          <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+          </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
     
@@ -43,6 +50,10 @@
           data = data.format('Do MMMM YYYY, hh:mm A');
           $(this).text(data);
         })
+      });
+      $(window).on('load',function() {
+        $("#status").fadeOut()
+        $("#preloader").delay(1000).fadeOut("slow");
       });
     </script>
   </body>
