@@ -9,8 +9,8 @@
                         @foreach($tasks as $task)
                             <div class="card mb-2 task-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{$task->title}} - Deadline: {{$task->getLocalTime($timezone,$task->user->timezone)}} </h5>
-                                    <p><b>Timezone:</b> {{$timezone}}</p>
+                                    <h5 class="card-title">{{$task->title}} - Deadline: <span class="deadline" data-datetime="{{$task->deadline}}" data-timezone="{{$task->user->timezone}}"></span> </h5>
+                                    <p><b>Timezone:</b> <span class="timezone"></span></p>
                                 </div>
                             </div>
                         @endforeach
