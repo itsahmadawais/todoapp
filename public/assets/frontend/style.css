@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#content {
+  min-height: 100vh;
+}
+
+#content .custom-pagination nav a {
+  text-decoration: none;
+}
+
+#content .custom-pagination nav div:nth-child(2) {
+  margin-top: 10px;
+}
+
+#content .custom-pagination nav div:nth-child(2) span[aria-current="page"] span {
+  background-color: #08d1f5 !important;
+  color: #fff;
+}
+
+#content .custom-pagination nav div:nth-child(2) a {
+  text-decoration: none;
+}
+
+#content .custom-pagination nav div:nth-child(2) svg {
+  width: 10px;
+}
+
+.task-card {
+  cursor: pointer;
+}
+
+.task-card:hover {
+  background-color: #08d1f5;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+}
+
+footer p {
+  padding: 10px 0;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

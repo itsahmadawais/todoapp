@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+
+#content{
+    min-height: 100vh;
+    .custom-pagination{
+        nav{
+            a{
+                text-decoration: none;
+            }
+            div:nth-child(2){
+                margin-top: 10px;
+                span[aria-current="page"] span{
+                    background-color: rgb(8, 209, 245) !important;
+                    color:#fff;
+                }
+                a{
+                    text-decoration: none;
+                }
+                svg{
+                    width: 10px;
+                }
+            }
+        }
+    }
+}
+.task-card{
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(8, 209, 245);
+        color:#fff;
+    }
+}
+footer{
+    color: #fff;
+    p{
+        padding: 10px 0;
+        margin: 0;
+    }
+}
